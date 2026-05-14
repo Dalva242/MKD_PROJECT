@@ -1,16 +1,16 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 @utility nav-link{
     @apply relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-full after:origin-bottom-right
      after:scale-x-0 after:bg-yellow-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100
      rounded-lg transition duration-300 hover:scale-105 hover:shadow-lg;
                 
-}
+} */
 
 
 /* style.css */
 /* BOUTTON RESERVER */
-@utility btn {
+/* @utility btn {
 @apply
   px-6 py-2  rounded-lg cursor-pointer border-0 bg-linear-to-r from-blue-900 to-cyan-500
   shadow-[0_0_8px_rgb(0,0,0,0.05)] tracking-[1.5px] uppercase text-[15px]
@@ -19,12 +19,12 @@
   hover:shadow-[0px_7px_29px]
   active:tracking-[3px] active:bg-[hsl(261,80%,48%)] active:text-white
   active:shadow-none active:translate-y-2.5 active:transition-[100ms]
-}
+} */
 
 
 /* STYLES SECTION SERVICE */
 
-@utility btn1{
+/* @utility btn1{
   @apply
     px-6 py-2  rounded-lg cursor-pointer border-0 bg-linear-to-r from-blue-900 to-cyan-500
   shadow-[0_0_8px_rgb(0,0,0,0.05)] tracking-[1.5px] uppercase text-[15px]
@@ -39,8 +39,27 @@
 @import "tailwindcss";
 @utility btn2{
   @apply
-  rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500 text-indigo-600 text-white">
+    <rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500 text-indigo-600 text-white">
     <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-indigo-600 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
     <span class="relative text-indigo-600 transition duration-300 group-hover:text-white ease">Button Text</span>
 
+} */
+
+@import "tailwindcss";
+
+@utility nav-link {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-full after:origin-bottom-right
+    after:scale-x-0 after:bg-yellow-300 after:transition-transform after:duration-300 
+    after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100
+    rounded-lg transition duration-300 hover:scale-105 hover:shadow-lg;
+}
+
+@utility btn {
+    @apply px-6 py-2 rounded-lg cursor-pointer border-0 bg-linear-to-r from-blue-900 to-cyan-500
+    shadow-[0_0_8px_rgb(0,0,0,0.05)] tracking-[1.5px] uppercase text-[15px]
+    transition-all duration-500 ease-in-out
+    hover:tracking-[3px] hover:bg-[hsl(261,80%,48%)] hover:text-white
+    hover:shadow-[0px_7px_29px]
+    active:tracking-[3px] active:bg-[hsl(261,80%,48%)] active:text-white
+    active:shadow-none active:translate-y-2.5 active:transition-[100ms];
 }
